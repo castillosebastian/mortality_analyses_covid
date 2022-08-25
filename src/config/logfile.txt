@@ -1,0 +1,6 @@
+INFO  [2022-08-25 11:27:13] Info_message:train ligthgbm: outofthebox {rstudioapi::getActiveDocumentContext()$path}
+INFO  [2022-08-25 11:28:08] Info_message:train ligthgbm: outofthebox~/mortality_analyses_covid/src/scripts/data_processing/depurar_lightgbm_cv.R
+INFO  [2022-08-25 11:29:04] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/scripts/data_processing/depurar_lightgbm_cv.R
+INFO  [2022-08-25 11:33:27] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/modeling/train_basic_lightgbm.R
+INFO  [2022-08-25 11:33:33] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/modeling/train_basic_lightgbm.R
+INFO  [2022-08-25 11:33:33] Info_message:training
