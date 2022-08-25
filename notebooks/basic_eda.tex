@@ -1,0 +1,324 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={R Notebook},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{R Notebook}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{source}\NormalTok{(}\StringTok{"\textasciitilde{}/R/mortality\_analyses\_covid/src/scripts/data\_processing/process\_raw\_data.R"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{skimr}\SpecialCharTok{::}\FunctionTok{skim}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{Data summary}\tabularnewline
+\toprule()
+\endhead
+Name & data \\
+Number of rows & 8311 \\
+Number of columns & 47 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Column type frequency: & \\
+character & 7 \\
+factor & 18 \\
+numeric & 22 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Group variables & None \\
+\bottomrule()
+\end{longtable}
+
+\textbf{Variable type: character}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.2267}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1333}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1867}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0533}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0533}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0800}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1200}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1467}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+skim\_variable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n\_missing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+complete\_rate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+min
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+max
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+empty
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n\_unique
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+whitespace
+\end{minipage} \\
+\midrule()
+\endhead
+codigo\_paciente & 0 & 1.00 & 5 & 7 & 0 & 8311 & 0 \\
+fdiag\_covid & 28 & 1.00 & 10 & 10 & 0 & 346 & 0 \\
+metodo\_otro & 8163 & 0.02 & 3 & 30 & 0 & 58 & 0 \\
+fini\_sintomas & 493 & 0.94 & 10 & 10 & 0 & 349 & 0 \\
+finternacion & 28 & 1.00 & 10 & 10 & 0 & 342 & 0 \\
+no\_neumonia\_cual & 8135 & 0.02 & 3 & 50 & 0 & 43 & 0 \\
+resultado & 0 & 1.00 & 6 & 8 & 0 & 2 & 0 \\
+\bottomrule()
+\end{longtable}
+
+\textbf{Variable type: factor}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1978}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1099}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1538}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0879}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.0989}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.3516}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+skim\_variable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n\_missing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+complete\_rate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ordered
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n\_unique
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+top\_counts
+\end{minipage} \\
+\midrule()
+\endhead
+sexo & 20 & 1.00 & FALSE & 2 & 1: 5174, 2: 3117 \\
+neumonia & 24 & 1.00 & FALSE & 2 & 1: 8111, 2: 176 \\
+severidad\_ins & 37 & 1.00 & FALSE & 4 & 2: 6607, 1: 1447, 0: 144, 3:
+76 \\
+sat\_aire\_ambiente & 74 & 0.99 & FALSE & 2 & 1: 6471, 2: 1766 \\
+progr\_image\_rad & 28 & 1.00 & FALSE & 2 & 2: 5635, 1: 2648 \\
+oxigeno\_supl & 28 & 1.00 & FALSE & 2 & 1: 6229, 2: 2054 \\
+vni & 28 & 1.00 & FALSE & 2 & 2: 7554, 1: 729 \\
+uti & 28 & 1.00 & FALSE & 2 & 2: 7746, 1: 537 \\
+arm & 28 & 1.00 & FALSE & 2 & 2: 8232, 1: 51 \\
+inotropicos & 28 & 1.00 & FALSE & 2 & 2: 8267, 1: 16 \\
+hipertension & 1849 & 0.78 & FALSE & 2 & 1: 3479, 0: 2983 \\
+diabetes & 1849 & 0.78 & FALSE & 2 & 0: 4557, 1: 1905 \\
+obesidad & 1849 & 0.78 & FALSE & 2 & 1: 3780, 0: 2682 \\
+cancer & 1849 & 0.78 & FALSE & 2 & 0: 6317, 1: 145 \\
+enf\_pulmonr & 1849 & 0.78 & FALSE & 2 & 0: 5931, 1: 531 \\
+enf\_hepatica & 1849 & 0.78 & FALSE & 2 & 0: 6412, 1: 50 \\
+enf\_renal & 1849 & 0.78 & FALSE & 2 & 0: 6302, 1: 160 \\
+enf\_coronaria & 1849 & 0.78 & FALSE & 2 & 0: 6130, 1: 332 \\
+\bottomrule()
+\end{longtable}
+
+\textbf{Variable type: numeric}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.2353}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0980}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1373}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0686}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0882}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0490}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0588}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0588}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0588}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0882}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0588}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+skim\_variable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n\_missing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+complete\_rate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+mean
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+sd
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p0
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p25
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p50
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p75
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p100
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+hist
+\end{minipage} \\
+\midrule()
+\endhead
+embarazo & 5196 & 0.37 & 2.00 & 0.05 & 1.0 & 2.0 & 2.0 & 2.0 & 2.0 &
+▁▁▁▁▇ \\
+edad & 0 & 1.00 & 52.83 & 14.38 & 0.0 & 43.0 & 53.0 & 63.0 & 96.0 &
+▁▃▇▆▁ \\
+peso & 26 & 1.00 & 89.40 & 20.13 & 0.0 & 76.0 & 87.0 & 100.0 & 412.0 &
+▆▇▁▁▁ \\
+altura & 35 & 1.00 & 160.00 & 38.00 & 0.0 & 161.0 & 169.0 & 174.0 &
+198.0 & ▁▁▁▁▇ \\
+imc & 458 & 0.94 & 31.54 & 6.48 & 11.4 & 27.1 & 30.5 & 34.6 & 99.9 &
+▆▇▁▁▁ \\
+metodo\_diag & 26 & 1.00 & 2.13 & 1.01 & 1.0 & 1.0 & 3.0 & 3.0 & 4.0 &
+▆▁▁▇▁ \\
+igg & 27 & 1.00 & 2.94 & 0.31 & 1.0 & 3.0 & 3.0 & 3.0 & 3.0 & ▁▁▁▁▇ \\
+igm & 27 & 1.00 & 2.95 & 0.28 & 1.0 & 3.0 & 3.0 & 3.0 & 3.0 & ▁▁▁▁▇ \\
+ig\_total & 27 & 1.00 & 2.92 & 0.37 & 1.0 & 3.0 & 3.0 & 3.0 & 3.0 &
+▁▁▁▁▇ \\
+frecuencia\_respiratoria & 581 & 0.93 & 23.00 & 4.77 & 2.0 & 20.0 & 22.0
+& 25.0 & 52.0 & ▁▇▅▁▁ \\
+frecuencia\_cardiaca & 221 & 0.97 & 88.87 & 19.61 & 24.0 & 78.0 & 89.0 &
+100.0 & 996.0 & ▇▁▁▁▁ \\
+temperatura & 272 & 0.97 & 36.61 & 0.83 & 34.0 & 36.0 & 36.4 & 37.0 &
+40.1 & ▁▇▆▂▁ \\
+saturacion & 63 & 0.99 & 91.15 & 5.48 & 35.0 & 89.0 & 92.0 & 95.0 &
+100.0 & ▁▁▁▂▇ \\
+ldh & 3234 & 0.61 & 750.57 & 10787.39 & 0.0 & 385.0 & 528.0 & 719.0 &
+767683.0 & ▇▁▁▁▁ \\
+progr\_imagerad\_perc & 5664 & 0.32 & 60.91 & 9.63 & 20.0 & 51.0 & 60.0
+& 70.0 & 100.0 & ▁▅▇▅▁ \\
+enf\_otras & 1849 & 0.78 & 0.26 & 0.44 & 0.0 & 0.0 & 0.0 & 1.0 & 1.0 &
+▇▁▁▁▃ \\
+corticoides & 713 & 0.91 & 0.95 & 0.21 & 0.0 & 1.0 & 1.0 & 1.0 & 1.0 &
+▁▁▁▁▇ \\
+heparina & 713 & 0.91 & 0.85 & 0.36 & 0.0 & 1.0 & 1.0 & 1.0 & 1.0 &
+▂▁▁▁▇ \\
+plasma\_conv & 713 & 0.91 & 0.04 & 0.19 & 0.0 & 0.0 & 0.0 & 0.0 & 1.0 &
+▇▁▁▁▁ \\
+antic\_monoclonales & 713 & 0.91 & 0.00 & 0.04 & 0.0 & 0.0 & 0.0 & 0.0 &
+1.0 & ▇▁▁▁▁ \\
+antibioticos & 713 & 0.91 & 0.50 & 0.50 & 0.0 & 0.0 & 1.0 & 1.0 & 1.0 &
+▇▁▁▁▇ \\
+otra\_medicacion & 713 & 0.91 & 0.33 & 0.47 & 0.0 & 0.0 & 0.0 & 1.0 &
+1.0 & ▇▁▁▁▃ \\
+\bottomrule()
+\end{longtable}
+
+\end{document}

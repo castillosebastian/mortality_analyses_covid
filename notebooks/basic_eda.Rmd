@@ -1,0 +1,18 @@
+---
+title: "basic EDA"
+author: "Claudio Sebastián Castillo"
+date: "`r format(Sys.Date(), '%d de %B de %Y') `"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+```{r}
+source("~/R/mortality_analyses_covid/src/scripts/data_processing/process_raw_data.R")
+```
+
+```{r}
+skimr::skim(data)
+```
+

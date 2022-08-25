@@ -57,19 +57,10 @@ ML related tasks:
 
 3.  Download dataset 
 
-        > 
+        > ~/R/mortality_analyses_covid/src/scripts/data_processing/process_raw_data.R
 
-4. Unzip the data:
+5. Set the value of variable `HOME_DIR`, libraries, logger and much more at `<PROJECT_HOME>/src/config/constants.R` 
 
-        > unzip tabular-playground-series-aug-2022.zip
-
-5. Set the value of variable `HOME_DIR` at `<PROJECT_HOME>/src/config/constants.R` 
-
-6. To process raw data into parquet format, go to `<PROJECT_HOME>/kaggle_pipeline_tps_aug_22`. Execute the following:
-
-        > python -m src.scripts.data_processing.process_raw_data
-
-    This will create 3 parquet files under `<PROJECT_HOME>/kaggle_pipeline_tps_aug_22/data/processed` representing train, test and sample_submission CSVs
 
 7. To trigger feature engineering, go to `<PROJECT_HOME>/kaggle_pipeline_tps_aug_22`. Execute the following:
 

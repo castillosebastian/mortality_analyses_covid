@@ -1,0 +1,14 @@
+INFO  [2022-08-24 16:01:01] Info_message:algo
+ERROR [2022-08-24 16:01:01] Error_message:se rompio todo
+INFO  [2022-08-24 16:04:25] Info_message:algo
+ERROR [2022-08-24 16:04:25] Error_message:se rompio todo
+INFO  [2022-08-24 16:04:44] Info_message:algo
+ERROR [2022-08-24 16:04:44] Error_message:se rompio todo
+INFO  [2022-08-24 16:05:51] Info_message:algo
+ERROR [2022-08-24 16:05:51] Error_message:se rompio todo
+INFO  [2022-08-24 16:06:31] Info_message:algo
+ERROR [2022-08-24 16:06:31] Error_message:se rompio todo
+INFO  [2022-08-24 16:08:24] Info_message:algo
+ERROR [2022-08-24 16:08:24] Error_message:se rompio todo
+INFO  [2022-08-24 16:08:26] Info_message:algo
+ERROR [2022-08-24 16:08:26] Error_message:se rompio todo
