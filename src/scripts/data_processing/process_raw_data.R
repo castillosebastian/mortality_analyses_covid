@@ -2,7 +2,7 @@
 ## final output is written to the specified directory
 
 
-source("~/R/mortality_analyses_covid/src/config/constants.R")
+source(paste0(here::here(), "/src/config/constants.R"))
 
 # start activity---
 log4r_info("reading dataset")

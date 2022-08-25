@@ -55,7 +55,7 @@ log4r_error <- function(mess) {
 #log4r_error("se rompio todo") 
 #readLines(my_logfile)
 
-HOME_DIR = "~/R/mortality_analyses_covid"
+HOME_DIR = here::here()
 
 RAW_DATA_DIR = paste0(HOME_DIR,  "/data/raw")
 PROCESSED_DATA_DIR = paste0(HOME_DIR,  "/data/processed")
