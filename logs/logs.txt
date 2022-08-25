@@ -53,3 +53,24 @@ INFO  [2022-08-24 21:20:09] Info_message:reading dataset
 INFO  [2022-08-24 21:20:09] Info_message:basic reading formating
 INFO  [2022-08-24 21:28:41] Info_message:reading dataset
 INFO  [2022-08-24 21:28:41] Info_message:basic reading formating
+INFO  [2022-08-25 10:09:19] Info_message:reading dataset
+INFO  [2022-08-25 10:09:19] Info_message:basic reading formating
+INFO  [2022-08-25 10:09:19] Info_message:reading dataset
+INFO  [2022-08-25 10:09:19] Info_message:basic reading formating
+INFO  [2022-08-25 10:12:18] Info_message:reading dataset
+INFO  [2022-08-25 10:12:18] Info_message:basic reading formating
+INFO  [2022-08-25 10:09:19] Info_message:reading dataset
+INFO  [2022-08-25 10:09:19] Info_message:basic reading formating
+INFO  [2022-08-25 10:12:18] Info_message:reading dataset
+INFO  [2022-08-25 10:12:18] Info_message:basic reading formating
+INFO  [2022-08-25 10:21:54] Info_message:reading dataset
+INFO  [2022-08-25 10:21:54] Info_message:basic reading formating
+INFO  [2022-08-25 11:27:13] Info_message:train ligthgbm: outofthebox {rstudioapi::getActiveDocumentContext()$path}
+INFO  [2022-08-25 11:28:08] Info_message:train ligthgbm: outofthebox~/mortality_analyses_covid/src/scripts/data_processing/depurar_lightgbm_cv.R
+INFO  [2022-08-25 11:29:04] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/scripts/data_processing/depurar_lightgbm_cv.R
+INFO  [2022-08-25 11:27:13] Info_message:train ligthgbm: outofthebox {rstudioapi::getActiveDocumentContext()$path}
+INFO  [2022-08-25 11:28:08] Info_message:train ligthgbm: outofthebox~/mortality_analyses_covid/src/scripts/data_processing/depurar_lightgbm_cv.R
+INFO  [2022-08-25 11:29:04] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/scripts/data_processing/depurar_lightgbm_cv.R
+INFO  [2022-08-25 11:33:27] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/modeling/train_basic_lightgbm.R
+INFO  [2022-08-25 11:33:33] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/modeling/train_basic_lightgbm.R
+INFO  [2022-08-25 11:33:33] Info_message:training

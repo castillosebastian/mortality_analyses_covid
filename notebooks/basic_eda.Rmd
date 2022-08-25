@@ -9,7 +9,8 @@ output:
 ---
 
 ```{r}
-source("~/R/mortality_analyses_covid/src/scripts/data_processing/process_raw_data.R")
+source("~/mortality_analyses_covid/src/config/constants.R")
+source(paste0(HOME_DIR,"/src/scripts/data_processing/process_raw_data.R"))
 ```
 
 ```{r}
