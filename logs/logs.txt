@@ -74,3 +74,5 @@ INFO  [2022-08-25 11:29:04] Info_message:train ligthgbm: outofthebox ~/mortality
 INFO  [2022-08-25 11:33:27] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/modeling/train_basic_lightgbm.R
 INFO  [2022-08-25 11:33:33] Info_message:train ligthgbm: outofthebox ~/mortality_analyses_covid/src/modeling/train_basic_lightgbm.R
 INFO  [2022-08-25 11:33:33] Info_message:training
+INFO  [2022-08-25 21:21:35] Info_message:reading dataset
+INFO  [2022-08-25 21:21:35] Info_message:basic reading formating
