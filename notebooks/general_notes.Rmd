@@ -1,0 +1,8 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# General notes
+
+On ligthgbm parameters: https://neptune.ai/blog/lightgbm-parameters-guide 

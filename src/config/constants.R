@@ -9,7 +9,10 @@ pacman::p_load(
   primes,
   log4r, 
   skimr,
-  here
+  here, 
+  ranger,
+  randomForest,
+  lightgbm
 ) # data wrangling packages
 # pacman::p_load(tidyverse, magrittr, tibble, ggfortify, forecast, data.table, dtplyr) # data wrangling packages
 # pacman::p_load(timetk, modeltime, fpp3, tsibble, tidymodels, modeltime.gluonts, modeltime.ensemble, modeltime.resample) # time series model packages
