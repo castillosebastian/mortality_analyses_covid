@@ -1,0 +1,65 @@
+---
+title: "basic EDA"
+author: "Claudio Sebastián Castillo"
+date: "`r format(Sys.Date(), '%d de %B de %Y') `"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+```{r}
+source("~/mortality_analyses_covid/src/config/constants.R")
+source(paste0(HOME_DIR,"/src/scripts/data_processing/process_raw_data.R"))
+```
+
+```{r}
+skimr::skim(data)
+```
+
+# Definición del problema
+
+El dataset contiene información biomédica de pacientes y variable dependiente binaria "muerte/no_muerte". Estamos ante un problema de clasificación binaria.  
+
+La métrica para evaluar la performance de nuestro modelo será "precisiónn" (true positive/predicted positive) y "exhaustividad" (true positive / all positive cases).    
+
+
+# Visión General del dataset
+
+En las tablas precedentes surge información exploratoria importante.    
+
+Tenemos variables de distintos tipos. El grupo de variables tipo *character* contiene algunas de alta cardinalidad así que podríamos evitar su empleo o bien discretizar, algunas con alto porcentaje de valores faltantes. 
+
+Hay también 18 variables factor, en estado aparentemente saludable. 
+
+Finalmente, hay 18 variables numéricas. Vemos que hay diferentes escalas en las variables, así como también distintas distribuciones, con pocas normales. 
+
+
+# Valores faltantes
+
+De las tablas precedentes podemos ver que existen muchas variables con valores faltantes (e.g. caso extremo *embarazo* con 63%). Esto podría ser una dificultad considerando que una gran mayoría de modelos en ML no admiten valores faltantes, pero en nuestro caso, dado que trabajaremos con el algoritmo *gradient boosting of decisión tree* (implementado en ligthgbm), esta conformación del dataset no representa un obstáculo. 
+
+Sin perjuicio de ello buscaremos formas de mejorar esta condición a través de distintos métodos (vía imputación o exclusión). 
+
+# Variable dependiente
+
+```{r}
+table(data$resultado) 
+```
+ 
+
+```{r}
+data$resultado %>% qplot()
+```
+La mortalidad que surge del dataset es de `r sum(data$resultado == "muerte")/ length(data$resultado)`. Nuestro modelo de *nula precisión*, es decir si clasificaremos a todos los nuevos casos como muerte tendríamos el valor precedente como linea_base.  
+
+
+
+
+
+
+
+
+
+
+

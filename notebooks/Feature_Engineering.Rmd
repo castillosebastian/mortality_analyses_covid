@@ -1,0 +1,16 @@
+---
+title: "Feature_Engineering"
+author: "Área de Planificación Gestión y Estadística"
+date: "26/8/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Feature engineering
+1. Feature understanding
+2. Feature structuring
+3. Feature optimization
+4. Feature evaluation
